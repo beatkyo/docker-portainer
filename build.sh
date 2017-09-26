@@ -44,6 +44,14 @@ function build-amd64 {
   build
 }
 
+function build-aarch64 {
+  ARCH="arm64v8"
+  IMAGE="arm64v8/alpine"
+  DIST="$DIST-linux-arm64"
+
+  build
+}
+
 function build-x86_64 { 
   build-amd64 
 }
